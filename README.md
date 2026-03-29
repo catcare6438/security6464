@@ -1445,7 +1445,7 @@ function openModal(catId){
         <div class="mig"><div class="mig-l">🎨 花色</div><div class="mig-v">${cat.color||'不詳'}</div></div>
         <div class="mig"><div class="mig-l">🎂 年紀</div><div class="mig-v">${cat.age||'未知'}</div></div>
         <div class="mig"><div class="mig-l">⚖️ 體重</div><div class="mig-v">${cat.weight||'未量'}</div></div>
-        <div class="mig"><div class="mig-l">📋 狀態</div><div class="mig-v">${{waiting:'🏠 等家中',foster:'🏡 中途中',perm:'💜 永久中途',adopted:'💚 已搬離',rainbow:'🌈 彩虹橋'}[cat.status]||cat.status}</div></div>
+        <div class="mig"><div class="mig-l">📋 狀態</div><div class="mig-v">$`{{waiting:'🏠 等家中',foster:'🏡 中途中',perm:'💜 永久中途',adopted:'💚 已搬離',rainbow:'🌈 彩虹橋'}[cat.status]||cat.status}`</div></div>
       </div>
       ${cat.vaccine||cat.deworm||cat.neuter?`
       <div class="m-health">
