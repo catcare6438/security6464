@@ -41,7 +41,7 @@ body::before{
     radial-gradient(circle at 85% 75%,rgba(184,228,255,.25) 0%,transparent 50%),
     radial-gradient(circle at 50% 50%,rgba(255,224,163,.1) 0%,transparent 60%);
 }
-/* crayon paper grain */
+
 body::after{
   content:'';position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.03;
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
